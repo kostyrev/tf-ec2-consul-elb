@@ -15,3 +15,7 @@ output "consul_security_group" {
 output "elb_security_group" {
   value = "${aws_security_group.elb.id}"
 }
+
+output "profile" {
+  value = "${aws_iam_instance_profile.consul-instance-profile.name}"
+}
